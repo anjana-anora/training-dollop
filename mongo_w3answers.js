@@ -27,3 +27,4 @@ db.hotel.find({borough:"Bronx", cuisine:{$in:['American ', 'Chinese']}})
 
 db.hotel.find({'grades.grade':'A', 'grades.score':11,'grades.date':ISODate("2014-08-11T00:00:00Z")},{name:1,restaurant_id:1,grades:1}) //22
 
+db.hotel.find({'address.coord':{$lt:-95.754168}})
